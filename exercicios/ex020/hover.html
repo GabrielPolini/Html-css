@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        /* Define o estilo do corpo da página, utilizando a fonte Arial, Helvetica, sans-serif */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Quando o mouse passa sobre qualquer <div>, muda a cor do texto para vermelho */
+        div:hover {
+            color: red;
+        }
+
+        /* Inicialmente, esconde todos os <p> que são descendentes diretos de <div> */
+        div > p {
+            display: none;
+        }
+
+        /* Quando o mouse passa sobre a <div>, torna visível o <p> que é seu descendente direto */
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red ;
+        }
+    </style>
+</head>
+<body>
+    <!-- Título da página -->
+    <h1>Exemplo de Hover</h1>
+    <!-- Instrução para o usuário -->
+    <p>Passe o mouse sobre o texto abaixo</p>
+
+    <!-- A <div> que será afetada pelo efeito de hover -->
+    <div>
+        <!-- Texto inicial dentro da <div> -->
+        Passe o mouse aqui
+        <!-- Parágrafo inicialmente oculto dentro da <div> -->
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>

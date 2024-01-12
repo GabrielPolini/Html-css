@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configuração do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilos para o corpo do documento */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(71, 102, 80);
+            margin: 10px;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: rgb(41, 179, 64);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Estilos para a barra de navegação */
+        nav {
+            background-color: rgb(107, 107, 107);
+            padding: 3px;
+            text-align: right;
+            box-shadow: 1px 1px 1px black ;
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            /* Aplicando cor preta apenas ao link "Início" */
+            color: white;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo específico para o link "Início" */
+        nav > a:first-child {
+            color: black;
+        /*nth-child(2) para selecionar o segundo filho*/
+        }
+
+        /* Estilos para o conteúdo principal */
+        main {
+            background-color: rgb(41, 179, 64);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Estilos para os artigos */
+        article {
+            background-color: rgb(71, 102, 80);
+        }
+
+        /* Estilos para as áreas laterais dos artigos */
+        article>aside {
+            background-color: rgb(143, 142, 142);
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Início do corpo do documento HTML -->
+    <header>
+        <!-- Cabeçalho com título e barra de navegação -->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">| Página 1 |</a>
+            <a href="#">| Página 2 |</a>
+            <a href="#">| Página 3 |</a>
+            <a href="#">| Página 4 |</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Conteúdo principal com seções vazias -->
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <!-- Seção de notícias com artigos -->
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+     
+
+    <footer>
+        <!-- Rodapé com informações sobre o desenvolvedor -->
+        <p>Desenvolvido por Gabriel dos Santos Polini</p>
+    </footer>
+    <!-- Fim do corpo do documento HTML -->
+</body>
+
+</html>

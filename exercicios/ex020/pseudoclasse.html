@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        /* Estiliza todos os elementos <div> com estas propriedades */
+        div {
+            display: inline-block;    /* Torna os elementos <div> em linha e em bloco */
+            background-color: lightgray;    /* Cor de fundo inicial */
+            border: 1px solid black;    /* Borda de 1 pixel sólida preta */
+            text-align: center;    /* Centraliza o texto dentro do <div> */
+            height: 200px;    /* Altura fixa de 200 pixels */
+            width: 250px;    /* Largura fixa de 250 pixels */
+        }
+        
+        /* Quando o mouse passa sobre qualquer <div>, muda a cor de fundo para amarelo */
+        div:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Três elementos <div> com identificadores únicos -->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
