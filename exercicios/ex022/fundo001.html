@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo o conjunto de caracteres e a largura de exibição para dispositivos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página -->
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        /* Estilo para o corpo da página, imagem de fundo 'wallpaper001.jpg' */
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        /* Estilos básicos para todas as divs quadradas */
+
+div.quadrado {
+    /* Define que as divs quadradas terão um layout em linha, permitindo que apareçam uma ao lado da outra */
+    display: inline-block;
+
+    /* Adiciona uma borda de 2 pixels de largura, sólida e preta em torno das divs quadradas */
+    border: 2px solid black;
+
+    /* Adiciona um arredondamento de borda de 10 pixels para suavizar os cantos das divs quadradas */
+    border-radius: 10px;
+
+    /* Define a cor de fundo das divs quadradas como lightgray */
+    background-color: lightgray;
+
+    /* Define a largura das divs quadradas como 300 pixels */
+    width: 300px;
+
+    /* Define a altura das divs quadradas como 300 pixels */
+    height: 300px;
+}
+
+
+        /* Estilo específico para a div com ID 'q1', fundo azul-celeste */
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        /* Estilo específico para a div com ID 'q2', fundo de gradiente amarelo para vermelho */
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        /* Estilo específico para a div com ID 'q3', fundo com imagem 'pattern003.png' */
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <!-- Primeira div quadrada com ID 'q1' e fundo azul-celeste -->
+    <div class="quadrado" id="q1">
+        <!-- Conteúdo da div (se houver) -->
+    </div>
+
+    <!-- Segunda div quadrada com ID 'q2' e fundo de gradiente amarelo para vermelho -->
+    <div class="quadrado" id="q2">
+        <!-- Conteúdo da div (se houver) -->
+    </div>
+
+    <!-- Terceira div quadrada com ID 'q3' e fundo com imagem 'pattern003.png' -->
+    <div class="quadrado" id="q3">
+        <!-- Conteúdo da div (se houver) -->
+    </div>
+</body>
+</html>
