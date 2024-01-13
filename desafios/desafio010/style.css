@@ -93,6 +93,7 @@ header > p {
     padding-right: 10px;                /* Adiciona um preenchimento de 10 pixels à direita do parágrafo. */
     padding-left: 10px;                 /* Adiciona um preenchimento de 10 pixels à esquerda do parágrafo. */
     margin: auto;                       /* Centraliza o parágrafo horizontalmente usando margens automáticas. */
+    padding-bottom: 50px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
     /* Adiciona uma sombra de texto com deslocamento horizontal de 2 pixels, deslocamento vertical de 2 pixels,
        sem desfoque e cor rgba(0, 0, 0, 0.486) (preto com transparência). */
